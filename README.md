@@ -61,9 +61,9 @@ xgboost
    Because of this, the scripts take a considerable amount of time to run, but I was able to run these scripts on a MacBook Pro M2 over a few hours.
    The script also saves the weights of the fine-tuned version of the Large Language Model, and as such make sure you have ~20 GB available if you wish to run all models.
 - `06_fine_tune_paragraph.py`: The same script as `05_fine_tune_sentence.py`, except for performing fine-tuning at the paragraph-level.
-- `07_compare_models.R`: Creates comparisons of text classification accuracy across different Large Language Models and different fine-tuning specifications. The output files are placed in `output/appendix/`
+- `07_compare_models.R`: Creates comparisons of text classification accuracy across different Large Language Models and different fine-tuning specifications. The output files are placed in `output/appendix/`.
 - `08_xgboost.py`: Performs Gradient Boosting through the `xgboost` package to create a text classification comparison point using a Bag-of-Words approach.
-- `09_prob_scores.R`: Generates the probability that each sentence/paragraph is classified as *judicial activism*. Because the classification of *judicial activism* is a binary indicator, I can pull the probability that each text label is classified as non-*judicial activism* (0), or *judicial activism* (1). This allows me to adjust the threshold it takes for a text label to be classified as *judicial activism*
+- `09_prob_scores.R`: Generates the probability that each sentence/paragraph is classified as *judicial activism*. Because the classification of *judicial activism* is a binary indicator, I can pull the probability that each text label is classified as non-*judicial activism* (0), or *judicial activism* (1). This allows me to adjust the threshold it takes for a text label to be classified as *judicial activism*.
 - `10_merge_regress.R`: Merges *judicial activism* scores with the rest of the measures I use (see the "Data" section in the PDF in this repository). The file then models the data using the two-stage selection model. Results of the intermediary probits and final regressions are saved under `output/regressions/probits_robust.RData` and `output/regressions/2step_robust.RData` respectively.
 
 ## Data
