@@ -1,10 +1,6 @@
 # judicial_activism
 Decision in Question: A Study of Supreme Court Justices’ Accusations of Judicial Activism in Separate Opinions
 
-## NOTE
-
-I am still working on getting the data in a clean format. I need to
-
 ## Necessary Packages
 
 For R:
